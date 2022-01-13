@@ -22,8 +22,8 @@ class DangerPlugin : ReCraftPlugin() {
 
 
     override fun onLoad() {
-        plugin = this
-        saveDefaultConfig()
+     plugin = this
+       saveDefaultConfig()
 
         val redisUrl: String =
             System.getenv("REDIS_URL") ?: config.getString("REDIS_URL") ?: "redis://password@localhost:6379/0"
